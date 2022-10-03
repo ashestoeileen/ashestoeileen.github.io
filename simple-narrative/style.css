@@ -1,0 +1,11 @@
+body {
+    margin:0;
+    background:darkred;
+    text-align: center;
+}
+.arrows {
+    width: 15%
+}
+.falls {
+    width:60%
+}
