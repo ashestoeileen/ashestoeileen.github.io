@@ -1,0 +1,41 @@
+body {
+    background: pink;
+    margin: 0;
+}
+body.two-col-page {
+    background-color: bisque;
+}
+main {
+    position: relative;
+    padding: 80px;
+    background: #fff;
+    width: 30%; 
+    margin: auto;
+    margin-top: 10%; 
+    height: 70vh;
+}
+.img1 {
+    position: absolute;
+    top: -160px;
+    left: -160px;
+    z-index: 1;
+}
+.img2 {
+    position: absolute;
+    bottom: -140px;
+    right: -140px;
+    z-index: 2;
+}
+
+main p {
+    z-index: 3;
+    position: relative;
+}
+
+.two-cols section{
+    flex:1;
+}
+
+.two-cols-p {
+    margin-left: -120px
+}
