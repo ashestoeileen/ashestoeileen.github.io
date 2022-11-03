@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    text-align: center;
+}
+#wheel-back,
+#wheel-front {
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#woman-on-bike {
+    animation: bike 1s ease-in-out infinite;
+    transform-origin: bottom;
+}
+
+#hair {
+    animation: hair 1s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(10deg);
+    }
+}
+
+@keyframes hair {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(10%);
+    }
+}
